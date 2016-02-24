@@ -1,0 +1,81 @@
+extends layout
+
+block content
+
+    #overview.mdl-layout__tab-panel.is-active
+      section.section--center.mdl-grid.mdl-grid--no-spacing.mdl-shadow--2dp
+        header.section__play-btn.mdl-cell.mdl-cell--3-col-desktop.mdl-cell--2-col-tablet.mdl-cell--4-col-phone.color-node.mdl-color-text--white
+          img(src='images/node.png')
+        .mdl-card.mdl-cell.mdl-cell--9-col-desktop.mdl-cell--6-col-tablet.mdl-cell--4-col-phone
+          .mdl-card__supporting-text
+            h4 Hello node.js!
+            | This is your guide to running node.js on Google Cloud.  Deploy a basic Node.js application by using Google App Engine Managed VMs. Your application can automatically scale to serve millions of requests.
+          .mdl-card__actions
+            a.mdl-button(href='https://cloud.google.com/nodejs/getting-started/hello-world') Get started
+        button#btn3.mdl-button.mdl-js-button.mdl-js-ripple-effect.mdl-button--icon
+          i.material-icons more_vert
+        ul.mdl-menu.mdl-js-menu.mdl-menu--bottom-right(for='btn3')
+          li.mdl-menu__item 
+            a(href='#') View the source
+          li.mdl-menu__item 
+            a(href='#') Read the docs
+
+      section.section--center.mdl-grid.mdl-grid--no-spacing.mdl-shadow--2dp
+        .mdl-card.mdl-cell.mdl-cell--12-col
+          .mdl-card__supporting-text.mdl-grid.mdl-grid--no-spacing
+            h4.mdl-cell.mdl-cell--12-col Details
+            .section__circle-container.mdl-cell.mdl-cell--2-col.mdl-cell--1-col-phone
+              .section__circle-container__circle.mdl-color--primary
+            .section__text.mdl-cell.mdl-cell--10-col-desktop.mdl-cell--6-col-tablet.mdl-cell--3-col-phone
+              h5 Lorem ipsum dolor sit amet
+              |                   Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla tempor do aute et eiusmod velit exercitation nostrud quis 
+              a(href='#') proident minim
+              | .
+            .section__circle-container.mdl-cell.mdl-cell--2-col.mdl-cell--1-col-phone
+              .section__circle-container__circle.mdl-color--primary
+            .section__text.mdl-cell.mdl-cell--10-col-desktop.mdl-cell--6-col-tablet.mdl-cell--3-col-phone
+              h5 Lorem ipsum dolor sit amet
+              |                   Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla tempor do aute et eiusmod velit exercitation nostrud quis 
+              a(href='#') proident minim
+              | .
+            .section__circle-container.mdl-cell.mdl-cell--2-col.mdl-cell--1-col-phone
+              .section__circle-container__circle.mdl-color--primary
+            .section__text.mdl-cell.mdl-cell--10-col-desktop.mdl-cell--6-col-tablet.mdl-cell--3-col-phone
+              h5 Lorem ipsum dolor sit amet
+              |                   Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla tempor do aute et eiusmod velit exercitation nostrud quis 
+              a(href='#') proident minim
+              | .
+          .mdl-card__actions
+            a.mdl-button(href='#') Read our features
+        button#btn2.mdl-button.mdl-js-button.mdl-js-ripple-effect.mdl-button--icon
+          i.material-icons more_vert
+        ul.mdl-menu.mdl-js-menu.mdl-menu--bottom-right(for='btn2')
+          li.mdl-menu__item Lorem
+          li.mdl-menu__item(disabled='') Ipsum
+          li.mdl-menu__item Dolor
+      section.section--center.mdl-grid.mdl-grid--no-spacing.mdl-shadow--2dp
+        .mdl-card.mdl-cell.mdl-cell--12-col
+          .mdl-card__supporting-text
+            h4 npm install gcloud
+            | Google Cloud Client Library for Node.js - an idiomatic, intuitive, and natural way for Node.js developers to integrate with Google Cloud Platform services, like Cloud Datastore and Cloud Storage.
+          .mdl-card__actions
+            a.mdl-button(href='https://googlecloudplatform.github.io/gcloud-node/#/') Learn more
+        button#btn3.mdl-button.mdl-js-button.mdl-js-ripple-effect.mdl-button--icon
+          i.material-icons more_vert
+        ul.mdl-menu.mdl-js-menu.mdl-menu--bottom-right(for='btn3')
+          li.mdl-menu__item
+            a(href='#') View the source
+          li.mdl-menu__item 
+            a(href='#') Read the docs
+      section.section--footer.mdl-color--white.mdl-grid
+        .section__circle-container.mdl-cell.mdl-cell--2-col.mdl-cell--1-col-phone
+          .section__circle-container__circle.mdl-color--accent.section__circle--big
+        .section__text.mdl-cell.mdl-cell--4-col-desktop.mdl-cell--6-col-tablet.mdl-cell--3-col-phone
+          h5 Lorem ipsum dolor sit amet
+          | Qui sint ut et qui nisi cupidatat. Reprehenderit nostrud proident officia exercitation anim et pariatur ex.
+        .section__circle-container.mdl-cell.mdl-cell--2-col.mdl-cell--1-col-phone
+          .section__circle-container__circle.mdl-color--accent.section__circle--big
+        .section__text.mdl-cell.mdl-cell--4-col-desktop.mdl-cell--6-col-tablet.mdl-cell--3-col-phone
+          h5 Lorem ipsum dolor sit amet
+          | Qui sint ut et qui nisi cupidatat. Reprehenderit nostrud proident officia exercitation anim et pariatur ex.
+            

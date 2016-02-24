@@ -1,0 +1,92 @@
+doctype html
+html
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title= title
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&lang=en')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/icon?family=Material+Icons')
+    link(rel='stylesheet', href='https://code.getmdl.io/1.1.1/material.blue_grey-indigo.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+      
+  body.mdl-demo.mdl-color--grey-100.mdl-color-text--grey-700.mdl-base
+    .mdl-layout.mdl-js-layout.mdl-layout--fixed-header
+      header.mdl-layout__header.mdl-layout__header--scroll.mdl-color--primary
+        .mdl-layout--large-screen-only.mdl-layout__header-row
+        .mdl-layout--large-screen-only.mdl-layout__header-row
+          img(src='images/logo.png')
+          h1= title
+        .mdl-layout--large-screen-only.mdl-layout__header-row
+        .mdl-layout__tab-bar.mdl-js-ripple-effect.mdl-color--primary-dark
+          a.mdl-layout__tab.is-active(href='#overview') Overview
+          a.mdl-layout__tab(href='#features') Features
+          a.mdl-layout__tab(href='#features') Details
+          a.mdl-layout__tab(href='#features') Technology
+          a.mdl-layout__tab(href='#features') FAQ
+          a(href='https://console.cloud.google.com/', target='_blank')
+            button#add.mdl-button.mdl-js-button.mdl-button--fab.mdl-js-ripple-effect.color-node.mdl-shadow--4dp
+              i.material-icons(role='presentation') add
+              span.visuallyhidden Add
+      main.mdl-layout__content
+        
+        block content
+
+        footer.mdl-mega-footer
+          .mdl-mega-footer--middle-section
+            .mdl-mega-footer--drop-down-section
+              input.mdl-mega-footer--heading-checkbox(type='checkbox', checked='')
+              h1.mdl-mega-footer--heading Features
+              ul.mdl-mega-footer--link-list
+                li
+                  a(href='#') About
+                li
+                  a(href='#') Terms
+                li
+                  a(href='#') Partners
+                li
+                  a(href='#') Updates
+            .mdl-mega-footer--drop-down-section
+              input.mdl-mega-footer--heading-checkbox(type='checkbox', checked='')
+              h1.mdl-mega-footer--heading Details
+              ul.mdl-mega-footer--link-list
+                li
+                  a(href='#') Spec
+                li
+                  a(href='#') Tools
+                li
+                  a(href='#') Resources
+            .mdl-mega-footer--drop-down-section
+              input.mdl-mega-footer--heading-checkbox(type='checkbox', checked='')
+              h1.mdl-mega-footer--heading Technology
+              ul.mdl-mega-footer--link-list
+                li
+                  a(href='#') How it works
+                li
+                  a(href='#') Patterns
+                li
+                  a(href='#') Usage
+                li
+                  a(href='#') Products
+                li
+                  a(href='#') Contracts
+            .mdl-mega-footer--drop-down-section
+              input.mdl-mega-footer--heading-checkbox(type='checkbox', checked='')
+              h1.mdl-mega-footer--heading FAQ
+              ul.mdl-mega-footer--link-list
+                li
+                  a(href='#') Questions
+                li
+                  a(href='#') Answers
+                li
+                  a(href='#') Contact us
+          .mdl-mega-footer--bottom-section
+            .mdl-logo
+              | More Information
+            ul.mdl-mega-footer--link-list
+              li
+                a(href='https://developers.google.com/web/starter-kit/') Web Starter Kit
+              li
+                a(href='#') Help
+              li
+                a(href='#') Privacy and Terms
+    a#view-source.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.color-node.mdl-color-text--accent-contrast(href='https://github.com/JustinBeckwith/express-material-quickstart', target='_blank') View Source
+    script(src='https://code.getmdl.io/1.1.1/material.min.js')
